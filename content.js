@@ -15,6 +15,10 @@
     messagePort.postMessage({ nd: nd.textContent });
   });
 
+  if (newsDivs) {
+    newsDivs[0].innerHTML = 'FOOBAR!!!!';
+  };
+
   messagePort.onMessage.addListener(function(message) {
     console.log('received');
   });
