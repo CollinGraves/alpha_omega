@@ -7,12 +7,12 @@
     "default_popup": "popup/popup.html"
   },
   "background": {
-    "scripts": ["background.js"],
+    "scripts": ["libraries/jquery/jquery3.1.0.min.js", "background.js"],
     "persistent": false
   },
   "content_scripts": [{
     "matches": ["*://*/*"],
-    "js": ["content.js"],
+    "js": ["libraries/jquery/jquery3.1.0.min.js", "content.js"],
     "css": ["content.css"]
   }]
 }
